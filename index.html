@@ -1,178 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="default">
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/responsive.css">
-    <title>Saas company</title>
-  </head>
-  <body>
-    <div id="pageTop"></div>
-    <nav class="navbar nav">
-    <div class="container">
-        <a class="navbar-brand" href="./index.html"><img src="./assets/logos/logo-front.svg" alt=""></a>
-        <ul class="navbar-nav">
-            <li class="nav-link">
-            <a href="#">Home</a>
-            </li>
-            <li class="nav-link">
-            <a href="#">Features</a>
-            </li>
-            <li class="nav-link">
-            <a href="#">Learn</a>
-            </li>
-            <li class="nav-link">
-            <a href="#">Pricing</a>
-            </li>
-            <li class="nav-link">
-              <a href="">Hire us</a>
-            </li>
-        </ul>
-        <button class="buy-now"> Buy Now</button>
-    </div>
-    </nav>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>saas homepage</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
     <header>
-      <div class="container">
-        <div class="front-wrapper">
-          <h2 class="front-header">
-              <a href="#" class="btn btn-blue">Learn More</a>
-          </h2>
+      <nav>
+        <div class="logo"><span><img class="front" src="./logos/logo-front.svg" alt="">
         </div>
-      </div>
+        <ul id="nav-list" class="nav-list">
+          <li id="close-btn" class="close-btn">
+            <i class="fa-solid fa-x"></i>
+          </li>
+          <li>Home</li>
+          <li>Features</li>
+          <li>Learn</li>
+          <li>Pricing</li>
+          <li><button>Hire us</button></li>
+        </ul>
+        <div id="mobile-bars" class="mobile-bars">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
     </header>
 
-    <!--Empowering side-->
-    <section class="video-demo">
-      <div class="container">
-          <div class="block-text">
-              <h2>Empowering teams with the freedom</h2>
-              <p>Own the unlimited power of the web development</p>
-              <button class="play-video">Play video</button>
-              <p>Learn more</p>
-          </div>
-      </div>
-   </section>
-
-
-   <!-- Why Font -->
-   <section class="why-me">
-    <div class="container why-me-wrapper">
-        <div class="block-text">
-            <span>Why front</span>
-            <p>Front is an incredibly beautiful, fully responsive , and mobile-first projects on <br>the web - it is the starting point for creative sites</p>
+    <main>
+      <div class="hero-container block">
+        <div class="information">
+          <h1>Empowering teams with the freedom
+          </h1>
+          <p>Own the unlimited power of the web development</p>
+          <button>Play Video</button>
+          <a href="#">Learn more</a>
         </div>
-    </div>
-</section>
+      </div>
 
+      <div class="information-grid">
 
-<!-- Pricing -->
-<section class="bg-contrast">
-<div class="pricing">
-    <div class="price-card">
-        <div class="price">59</div>
-        <div class="billed">/mo</div>
-        <hr>
-        <p>start your Front business now. 100% guaranteed money back. No questions asked.</p>
-        <button class="play-video">Play video</button>
-        <p>No credit card required.</p>
-    </div>
-
-<!-- Information -->
-<section class="information">
-<div class="information-grid">
-
-<div class="top-left">
-    <img src="./assets/images/components.svg" alt="" class="info">
-<div class="top-info">
-    <h4>Hundreds of components</h4>
-    <p>Achieve maximum productivity with minimum effort with Front and create robust Limitless products.</p>
-</div>
-
-<div class="top-right">
-  <img src="./assets/images/images.svg" alt="" class="info">
-<div class="top-info">
-  <h4>Images included</h4>
-  <p>Images included We made custom license for all our premium images in the front</p>
-</div>
-
-<div class="bottom-left">
-  <img src="./assets/images/cancel.svg" alt="" class="info">
-<div class="top-info">
-  <h4>Cancel anytime</h4>
-  <p>If its not for you, just cancel, no hidden costs or fees.</p>
-</div>
-
-<div class="bottom-right">
-  <img src="./assets/images/moneyback.svg" alt="" class="info">
-<div class="top-info">
-  <h4>Money back</h4>
-  <p>100% guarateed money back. No questions asked.</p>
-</div>
-
-</div>
-</div>
-</section>
-</section>
-
-<!-- Hire Us -->
-
-
-
-<!-- Footer -->
-<footer class="bg-footer">
-<div class="container">
-<section class="footer-top">
-<div class="footer-col">
-<div class="contact-info">
-    <ul>
-    <li><i class="fas fa-map-marker-alt"></i> 153 Williamson Plaza, Maggieberg</li>
-    <li><i class="fas fa-phone-alt"></i>+1 (062) 109-9222</li>
-    </ul>
+        <div class="top-left">
+            <img src="./images/components.svg" alt="" class="info">
+          
+        <div class="top-info">
+            <h4>Hundreds of components</h4>
+            <p>Achieve maximum productivity with minimum effort with Front and create robust Limitless products.</p>
+        </div>
+        </div>
+        
+        <div class="top-right">
+          <img src="./images/images.svg" alt="" class="info">
+        
+        <div class="top-info">
+          <h4>Images included</h4>
+          <p>Images included We made custom license for all our premium images in the front</p>
+        </div>
+        </div>
+        
+        <div class="bottom-left">
+          <img src="./images/cancel.svg" alt="" class="info">
+        <div class="top-info">
+          <h4>Cancel anytime</h4>
+          <p>If its not for you, just cancel, no hidden costs or fees.</p>
+        </div>
+        </div>
+        
+        <div class="bottom-right">
+          <img src="./images/moneyback.svg" alt="" class="info">
+        <div class="top-info">
+          <h4>Money back</h4>
+          <p>100% guarateed money back. No questions asked.</p>
+        </div>
+        </div>
+        
+        </div>
+    </main>
   </div>
-</div>
-</section>
-</div>
 
-<section class="footer-information">
-<div class="footer-bottom-wrapper">
 
-<div class="footer-company-links">
-  <h6>Company</h6>
-    <ul>
-    <li><a href="">About</a></li>
-    <li><a href="">Career</a></li>
-    <li><a href="">Blog</a></li>
-    <li><a href="">Customers</a></li>
-    <li><a href="">Hire us</a></li>
-    </ul>
 
-    <h6>Features</h6>
-    <ul>
-    <li><a href="">Press</a></li>
-    <li><a href="">Release notes</a></li>
-    <li><a href="">Integrations</a></li>
-    <li><a href="">Pricing</a></li>
-    </ul>
-
-    <h6>Documentation</h6>
-    <ul>
-    <li><a href="">Support</a></li>
-    <li><a href="">Docs</a></li>
-    <li><a href="">Status</a></li>
-    <li><a href="">API Reference</a></li>
-    <li><a href="">Tech Requirements</a></li>
-    </ul>
-
-    <h6>Resources</h6>
-    <ul>
-    <li><a href="">Help</a></li>
-    <li><a href="">Your Account</a></li>
-    </ul>
-</div>
-</div>
-</section>
-</footer>
-  </body>
+</body>
 </html>

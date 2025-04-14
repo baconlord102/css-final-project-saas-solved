@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+} 
+
+button{
+  cursor: pointer;
+  background-color: #2476FF;
+  color: #fff;
+}
+body{
+  font-family: "Manrope", sans-serif;
+}
+
+header {
+  
+  padding: 10px 30px 10px 30px;
+  background-color: #F6F8FA;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.close-btn {
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: none;
+}
+
+.mobile-bars {
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: none;
+}
+
+.block {
+  margin-bottom: 3rem;
+}
+
+nav {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+div .logo {
+  width: 155px;
+  height: 45px;
+}
+
+nav .nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
