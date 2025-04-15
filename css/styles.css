@@ -9,13 +9,14 @@ button{
   cursor: pointer;
   background-color: #2476FF;
   color: #fff;
+  border: none;
+  border-radius: 20px;
 }
 body{
   font-family: "Manrope", sans-serif;
 }
 
-header {
-  
+header {   
   padding: 10px 30px 10px 30px;
   background-color: #F6F8FA;
 }
@@ -58,4 +59,90 @@ nav .nav-list {
   align-items: center;
   justify-content: center;
   gap: 2rem;
+} 
+
+nav .nav-list li {
+  cursor: pointer;
 }
+
+nav .nav-list li:hover{
+  color: #2476FF;
+  text-decoration: underline;
+}
+
+/* Wont work??? */
+ /* li .current{
+  color: #2476FF;
+ } */
+
+ nav .nav-list li button {
+  padding: .75rem 1.875rem;
+ }
+ 
+ section{
+  background-image: url(../assets/bg/background-top.svg);
+  width: 100%;
+  height: 446px;
+ }
+
+ .section-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 1.5rem; 
+  padding: 30px;
+ }
+
+ h1 {
+  font-size: 40px;
+  padding-right:202px;
+ }
+
+ p{
+  color: #677788;
+  padding-bottom: 30px;
+ }
+ 
+ section .hero-container button {
+  padding: .75rem 1.875rem;
+ }
+
+ a{
+  padding-left: 30px;
+  text-decoration: none;
+ }
+
+ a:hover{
+  cursor: pointer;
+  color: #2476FF;
+ }
+ 
+
+ .icon-container img{
+  height: 40px;
+  width: 40px;
+ }
+
+ main {
+  padding: 5rem 4rem;
+  display: grid;
+  border: 1px;
+  gap: 40px;
+  grid-template-columns: 1fr 1fr;
+ }
+
+ .pricing-container{
+  border: 1px;
+  padding:40px;
+  gap: 50px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);;
+ }
+ .information-grid{
+  display: grid;
+  grid-template-columns: inherit;
+ }
+
+ .information-grid img{
+  width: 40px;
+  height: 40px;
+ }

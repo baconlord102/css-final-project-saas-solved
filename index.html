@@ -4,24 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>saas homepage</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="./css/styles.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Navigation -->
   <div class="container">
     <header>
       <nav>
-        <div class="logo"><span><img class="front" src="./logos/logo-front.svg" alt="">
+        <div class="logo"><span><img class="front" src="./assets/logos/logo-front.svg" alt="">
         </div>
         <ul id="nav-list" class="nav-list">
           <li id="close-btn" class="close-btn">
             <i class="fa-solid fa-x"></i>
           </li>
           <li>Home</li>
-          <li>Features</li>
+          <li class="current">Features</li>
           <li>Learn</li>
           <li>Pricing</li>
           <li><button>Hire us</button></li>
@@ -32,21 +33,50 @@
       </nav>
     </header>
 
-    <main>
+<!-- Entry -->
+    <section class="section-container">
+      
       <div class="hero-container block">
         <div class="information">
-          <h1>Empowering teams with the freedom
-          </h1>
+          <h1>Empowering teams with the freedom</h1>
+          <br>
           <p>Own the unlimited power of the web development</p>
           <button>Play Video</button>
           <a href="#">Learn more</a>
         </div>
       </div>
 
+      <div class="icon-container">
+        <div class="icons">
+            <img src="./assets/logos/google.png" alt="google">
+            <img src="./assets/logos/atlassian.png" alt="atlassian">
+            <img src="./assets/logos/asana.png" alt="asana">
+            <img src="./assets/logos/paypal.jpg" alt="paypal">
+            <img src="./assets/logos/weave.png" alt="weave">
+            <img src="./assets/logos/google-ads.png" alt="google-ads">
+            <img src="./assets/logos/calendar.png" alt="calendar">
+        </div>
+      </div>
+    </section>
+
+    <!-- main info -->
+<main>
+    <div class="pricing-container">
+      <div class="price">
+      <h3>59</h3>
+      <h5>/</h5>
+      <p>mo</p>
+      <hr>
+      <p>Start your Front business now. 100% guaranteed money back. No questions asked.</p>
+      <button>Play Video</button>
+      <p>No credit card required.</p>
+      </div>
+  </div>
+
       <div class="information-grid">
 
         <div class="top-left">
-            <img src="./images/components.svg" alt="" class="info">
+            <img src="./assets/images/components.svg" alt="" class="info">
           
         <div class="top-info">
             <h4>Hundreds of components</h4>
@@ -55,7 +85,7 @@
         </div>
         
         <div class="top-right">
-          <img src="./images/images.svg" alt="" class="info">
+          <img src="./assets/images/images.svg" alt="" class="info">
         
         <div class="top-info">
           <h4>Images included</h4>
@@ -64,7 +94,7 @@
         </div>
         
         <div class="bottom-left">
-          <img src="./images/cancel.svg" alt="" class="info">
+          <img src="./assets/images/cancel.svg" alt="" class="info">
         <div class="top-info">
           <h4>Cancel anytime</h4>
           <p>If its not for you, just cancel, no hidden costs or fees.</p>
@@ -72,7 +102,7 @@
         </div>
         
         <div class="bottom-right">
-          <img src="./images/moneyback.svg" alt="" class="info">
+          <img src="./assets/images/moneyback.svg" alt="" class="info">
         <div class="top-info">
           <h4>Money back</h4>
           <p>100% guarateed money back. No questions asked.</p>
