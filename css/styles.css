@@ -79,7 +79,7 @@ nav .nav-list li:hover{
   padding: .75rem 1.875rem;
  }
  
- section{
+ .section-container{
   background-image: url(../assets/bg/background-top.svg);
   width: 100%;
   height: 446px;
@@ -100,10 +100,9 @@ nav .nav-list li:hover{
 
  p{
   color: #677788;
-  padding-bottom: 30px;
  }
  
- section .hero-container button {
+ .hero-container button {
   padding: .75rem 1.875rem;
  }
 
@@ -117,32 +116,195 @@ nav .nav-list li:hover{
   color: #2476FF;
  }
  
+ .pricing-container button {
+  padding: .75rem 1.875rem;
+ }
 
  .icon-container img{
   height: 40px;
   width: 40px;
  }
 
- main {
+ .why-front {
+  text-align: center;
+  padding: 60px 20px;
+  background: white;
+}
+
+.why-front h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.why-front p {
+  max-width: 700px;
+  margin: 0 auto 50px;
+  color: #6b7280; 
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.timeline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  position: relative;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 10%;
+  right: 10%;
+  height: 2px;
+  background-color: #e5e7eb; 
+  z-index: 0;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.circle {
+  width: 60px;
+  height: 60px;
+  background-color: #f1f5ff; 
+  border-radius: 50%;
+  position: relative;
+}
+
+.circle::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: #2563eb; 
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.step span {
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+}
+
+.price-header h2{
+  text-align: center;
+}
+
+.price-header p{
+  text-align: center;
+}
+
+.price-container {
   padding: 5rem 4rem;
   display: grid;
-  border: 1px;
-  gap: 40px;
+  gap: 60px;
   grid-template-columns: 1fr 1fr;
- }
+  align-items: start;
+}
 
- .pricing-container{
-  border: 1px;
-  padding:40px;
-  gap: 50px;
-  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);;
- }
- .information-grid{
+.pricing-container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
+}
+
+.pricing-container h1 {
+  font-size: 56px;
+  font-weight: 700;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.pricing-container span {
+  font-size: 20px;
+  color: #6b7280;
+}
+
+.pricing-container hr {
+  border: none;
+  border-top: 1px solid #e5e7eb;
+  margin: 20px 0;
+}
+
+.pricing-container p {
+  color: #6b7280;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.pricing-container button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: #2476FF;
+  color: white;
+  font-size: 16px;
+  padding: 0.75rem 1.875rem;
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.pricing-container .credit-note {
+  font-size: 14px;
+  color: #94a3b8;
+  margin-top: 10px;
+}
+
+/* Right Side Info Grid */
+.information-grid {
   display: grid;
-  grid-template-columns: inherit;
- }
+  grid-template-columns: 1fr 1fr;
+  gap: 40px 30px;
+}
 
- .information-grid img{
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.info-item img {
   width: 40px;
   height: 40px;
- }
+  flex-shrink: 0;
+}
+
+.info-item h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.info-item p {
+  color: #6b7280;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* "sketch" label */
+.sketch {
+  background-color: #01C9A7;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 12px;
+  margin-left: 8px;
+}
