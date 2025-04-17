@@ -21,11 +21,6 @@ header {
   background-color: #F6F8FA;
 }
 
-.container {
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
 .close-btn {
   cursor: pointer;
   font-size: 1.5rem;
@@ -307,4 +302,12 @@ nav .nav-list li:hover{
   padding: 3px 10px;
   border-radius: 12px;
   margin-left: 8px;
+}
+
+.hire-us-container{
+  background-color: #20335B;
+}
+
+img .man{
+  border-radius: ;
 }
