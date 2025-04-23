@@ -36,7 +36,7 @@
 
 <!-- Entry -->
     <section class="section-container">      
-      <div class="hero-container block">
+      <div class="hero-container display">
         <div class="information">
           <h1>Empowering teams with the freedom</h1>
           <br>
@@ -145,40 +145,59 @@
     </section>
 
     <!-- form -->
-     <section class="form">
-        <div class="hire-us-container">
-        <div>
-          <h1 class="hire-us">Hire Us</h1>
-          <p>Whatever your goal - we will get you there</p>
+    <section class="contact-section">
+      <div class="left-side">
+        <h2>Hire Us</h2>
+        <p class="subtitle">Whatever your goal - we will get you there</p>
+        <hr>
+        <blockquote>
+          “ I love front! I love the ease of use, I love the fact that I have total creative freedom...”
+        </blockquote>
+        <div class="author">
+          <img src="./assets/images/man_one.jpg" alt="Charlotte Moore" />
+          <div>
+            <strong>Charlotte Moore</strong><br>
+            <span>Head of Commercials, Slack</span>
+          </div>
         </div>
-        <hr/>
-        <em>"I love front! I love the ease of use, I love the fact that I have total creative freedom..."</em>
-        <h5>Charlotte Moore</h5>
-        <p class="credit-note">Head of Commercials, Slack</p>
-        <img class="man" src="./assets/images/man_one.jpg" alt="man">
       </div>
-    <form>
-    <h4>Fill out the form and wel'll be in touch as soon as possible</h4>
-      <div>
-        <label for="Firstname"></label >
-        <input type="name" placeholder="First Name">
-      </div>
+    
+      <form class="form-card">
+        <h4>Fill out the form and we'll be in touch as soon as possible</h4>
+    
+        <div class="form-row">
+          <input type="text" placeholder="First name">
+          <input type="text" placeholder="Last name">
+        </div>
+    
+        <input type="email" placeholder="Email">
+    
+        <div class="form-row">
+          <select>
+            <option>Budget</option>
+          </select>
+          <select>
+            <option>Country</option>
+          </select>
+        </div>
+    
+        <textarea placeholder="Tell us more about your project, needs, and timeline, please..."></textarea>
+    
+        <label class="checkbox-wrap">
+          <input type="checkbox">
+          <span>Yes, I'd like to receive occasional marketing emails from Front. I have the right to opt out at any time.</span>
+        </label>
+    
+        <div class="privacy-links">
+          <a href="#">View privacy policy</a>
+          <a href="#">View privacy policy</a>
+        </div>
+    
+        <button type="submit">Submit Form</button>
+      </form>
+    </section>
+    <footer>
       
-      <div>
-        <label for="Lastname"></label >
-        <input type="name" placeholder="Last Name">
-      </div>
-
-
-    </form>
-      </section>
-    
-
-    
-
-  
-
-
-
+    </footer>
 </body>
 </html>
