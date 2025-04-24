@@ -431,3 +431,71 @@ nav .nav-list li:hover{
   cursor: pointer;
   align-self: flex-start;
 }
+
+footer {
+  background-color: #fff;
+  padding: 60px 40px;
+  border-top: 1px solid #e5e7eb;
+  font-family: 'Manrope', sans-serif;
+  font-size: 14px;
+  color: #111827;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-info {
+  max-width: 220px;
+}
+
+.contact-info img {
+  margin-bottom: 12px;
+}
+.number{
+  color: #2576FF;
+}
+
+.contact-info .address,
+.contact-info .number {
+  margin: 8px 0;
+}
+
+.footer-info-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-info-container > div {
+  min-width: 120px;
+}
+
+.footer-info-container h5 {
+  font-weight: 700;
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+.footer-info-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-info-container li {
+  margin-bottom: 8px;
+  color: #6b7280;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.footer-info-container li:hover {
+  color: #2563eb;
+}
+
