@@ -12,6 +12,15 @@ button{
   border: none;
   border-radius: 20px;
 }
+
+button:hover { 
+cursor: pointer;
+background-color: #fff;
+color: #2476FF;
+border: solid ;
+transition-duration: .4s;
+}
+
 body{
   font-family: "Manrope", sans-serif;
 }
@@ -65,11 +74,6 @@ nav .nav-list li:hover{
   text-decoration: underline;
 }
 
-/* Wont work??? */
- /* li .current{
-  color: #2476FF;
- } */
-
  nav .nav-list li button {
   padding: .75rem 1.875rem;
  }
@@ -114,11 +118,48 @@ nav .nav-list li:hover{
  .pricing-container button {
   padding: .75rem 1.875rem;
  }
+ /* Icons */
 
- .icon-container img{
-  height: 40px;
-  width: 40px;
- }
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  max-width: 700px; /* for more breathing room */
+  position: relative; /* needed if you later add transforms or stacking */
+}
+
+.icons img {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* darker & wider for visibility */
+  object-fit: contain;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+/* Right-to-left group */
+.logo-1,
+.logo-3,
+.logo-6 {
+  width: 60px;
+  height: 60px;
+  animation: fadeLeft 0.8s ease forwards;
+}
+
+/* Bottom-to-top group */
+.logo-2,
+.logo-4,
+.logo-5,
+.logo-7 {
+  width: 70px;
+  height: 70px;
+  animation: fadeUp 0.8s ease forwards;
+}
+
+
+
 
  .why-front {
   text-align: center;
@@ -208,6 +249,8 @@ nav .nav-list li:hover{
   gap: 60px;
   grid-template-columns: 1fr 1fr;
   align-items: start;
+  max-width: 1500px;
+  margin: auto;
 }
 
 .pricing-container {
@@ -273,6 +316,7 @@ nav .nav-list li:hover{
   display: flex;
   align-items: flex-start;
   gap: 20px;
+  flex-direction: column;
 }
 
 .info-item img {
@@ -311,6 +355,8 @@ nav .nav-list li:hover{
   background-color: #1e2a47;
   color: white;
   font-family: 'Inter', sans-serif;
+  max-width: 1500px;
+  margin: auto;
 }
 
 /* Left side */
@@ -456,6 +502,7 @@ footer {
 
 .contact-info img {
   margin-bottom: 12px;
+  height: 40px;
 }
 .number{
   color: #2576FF;
@@ -499,3 +546,28 @@ footer {
   color: #2563eb;
 }
 
+
+
+/* Animations */
+
+@keyframes fadeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
