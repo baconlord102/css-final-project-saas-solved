@@ -3,249 +3,209 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>saas homepage</title>
+  <title>SaaS Homepage</title>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+  <link rel="stylesheet" href="./main.js">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- Navigation -->
-  <div class="container">
-    <header>
-      <nav>
-        <div class="logo"><span><img class="front" src="./assets/logos/logo-front.svg" alt="">
-        </div>
-        <ul id="nav-list" class="nav-list">
-          <li id="close-btn" class="close-btn">
-            <i class="fa-solid fa-x"></i>
-          </li>
-          <li>Home</li>
-          <li class="current">Features</li>
-          <li>Learn</li>
-          <li>Pricing</li>
-          <li><button>Hire us</button></li>
-        </ul>
-        <div id="mobile-bars" class="mobile-bars">
-          <i class="fa-solid fa-bars"></i>
-        </div>
-      </nav>
-    </header>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="assets/logos/logo-front.svg" alt="Front Logo" style="height:45px;">
+      </div>
+      <ul id="nav-list" class="nav-list">
+        <li id="close-btn" class="close-btn">
+          <i class="fa-solid fa-x"></i>
+        </li>
+        <li>Home</li>
+        <li>Features</li>
+        <li>Learn</li>
+        <li>Pricing</li>
+        <li><button>Hire us</button></li>
+      </ul>
+      <div id="mobile-bars" class="mobile-bars">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="section-container">      
+    <div class="hero-container display">
+      <div class="information">
+        <h1>Empowering teams with the freedom</h1>
+        <br>
+        <p>Own the unlimited power of web development</p>
+        <button>Play Video</button>
+        <a href="#">Learn more</a>
+      </div>
+    </div>
+    <div class="icon-container">
+      <div class="icons">
+        <img src="assets/logos/google.png" alt="google" class="logo-1">
+        <img src="assets/logos/atlassian.png" alt="atlassian" class="logo-2">
+        <img src="assets/logos/asana.png" alt="asana" class="logo-3">
+        <img src="assets/logos/paypal.jpg" alt="paypal" class="logo-4">
+        <img src="assets/logos/weave.png" alt="weave" class="logo-5">
+        <img src="assets/logos/google-ads.png" alt="google-ads" class="logo-6">
+        <img src="assets/logos/calendar.png" alt="calendar" class="logo-7">
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Info -->
+  <section class="why-front">
+    <h2>Why front?</h2>
+    <p>Front is an incredibly beautiful, fully responsive, and mobile-first project on the web – it is the starting point for creative sites.</p>
+    <div class="timeline">
+      <div class="step"><div class="circle"></div><span>Basic elements</span></div>
+      <div class="step"><div class="circle"></div><span>Components</span></div>
+      <div class="step"><div class="circle"></div><span>Combined components</span></div>
+      <div class="step"><div class="circle"></div><span>Page layouts</span></div>
+    </div>
+  </section>
+
+  <div class="price-header">
+    <h2>Pricing</h2>
+    <p>No additional costs. Pay for what you use</p>
   </div>
 
-<!-- Entry -->
-    <section class="section-container">      
-      <div class="hero-container display">
-        <div class="information">
-          <h1>Empowering teams with the freedom</h1>
-          <br>
-          <p>Own the unlimited power of the web development</p>
-          <button>Play Video</button>
-          <a href="#">Learn more</a>
-        </div>
+  <section class="price-container">
+    <div class="pricing-container">
+      <div>
+        <h1>59</h1><span>/ mo</span>
       </div>
-
-      <div class="icon-container">
-        <div class="icons">
-            <img src="./assets/logos/google.png" alt="google" class="logo-1">
-            <img src="./assets/logos/atlassian.png" alt="atlassian" class="logo-2">
-            <img src="./assets/logos/asana.png" alt="asana" class="logo-3">
-            <img src="./assets/logos/paypal.jpg" alt="paypal" class="logo-4">
-            <img src="./assets/logos/weave.png" alt="weave" class="logo-5">
-            <img src="./assets/logos/google-ads.png" alt="google-ads" class="logo-6">
-            <img src="./assets/logos/calendar.png" alt="calendar" class="logo-7">
-        </div>
-      </div>
-    </section>
-
-    <!-- main info -->
-    <section class="why-front">
-      <h2>Why front?</h2>
-      <p>Front is an incredibly beautiful, fully responsive , and mobile-first projects on the web – it is the starting point for creative sites</p>
-      
-      <div class="timeline">
-        <div class="step">
-          <div class="circle"></div>
-          <span>Basic elements</span>
-        </div>
-        <div class="step">
-          <div class="circle"></div>
-          <span>Components</span>
-        </div>
-        <div class="step">
-          <div class="circle"></div>
-          <span>Combined components</span>
-        </div>
-        <div class="step">
-          <div class="circle"></div>
-          <span>Page layouts</span>
-        </div>
-      </div>
-    </section>
-
-    <div class="price-header">
-      <h2>Pricing</h2>
-      <p>No additional costs. Pay for what you use</p>
+      <hr />
+      <p>Start your Front business now. 100% guaranteed money back. No questions asked.</p>
+      <button>Play Video</button>
+      <p class="credit-note">No credit card required.</p>
     </div>
-
-
-    <section class="price-container">
-      <!-- Left Pricing Card -->
-      <div class="pricing-container">
+    <div class="information-grid">
+      <div class="info-item">
+        <img src="assets/images/components.svg" alt="Components Icon" />
         <div>
-          <h1>59</h1><span>/ mo</span>
-        </div>
-        <hr />
-        <p>Start your Front business now. 100% guaranteed money back. No questions asked.</p>
-        <button>
-          Play Video
-        </button>
-        <p class="credit-note">No credit card required.</p>
-      </div>
-    
-      <!-- Right Info Grid -->
-      <div class="information-grid">
-        <!-- Item 1 -->
-        <div class="info-item">
-          <img src="./assets/images/components.svg" alt="Components Icon" />
-          <div>
-            <h4>Hundreds of components</h4>
-            <p>Achieve maximum productivity with minimum effort with Front and create robust Limitless products.</p>
-          </div>
-        </div>
-    
-        <!-- Item 2 -->
-        <div class="info-item">
-          <img src="./assets/images/images.svg" alt="Images Icon" />
-          <div>
-            <h4>Images included</h4>
-            <p>We made custom licenses for all our premium images in the front.</p>
-          </div>
-        </div>
-    
-        <!-- Item 3 -->
-        <div class="info-item">
-          <img src="./assets/images/cancel.svg" alt="Cancel Icon" />
-          <div>
-            <h4>Cancel anytime <span class="sketch">sketch</span></h4>
-            <p>If it's not for you, just cancel, no hidden costs or fees.</p>
-          </div>
-        </div>
-    
-        <!-- Item 4 -->
-        <div class="info-item">
-          <img src="./assets/images/moneyback.svg" alt="Money Back Icon" />
-          <div>
-            <h4>Money back</h4>
-            <p>100% guaranteed money back. No questions asked.</p>
-          </div>
+          <h4>Hundreds of components</h4>
+          <p>Achieve maximum productivity with minimum effort with Front and create robust Limitless products.</p>
         </div>
       </div>
-    </section>
-
-    <!-- form -->
-    <section class="contact-section">
-      <div class="left-side">
-        <h2>Hire Us</h2>
-        <p class="subtitle">Whatever your goal - we will get you there</p>
-        <hr>
-        <blockquote>
-          “ I love front! I love the ease of use, I love the fact that I have total creative freedom...”
-        </blockquote>
-        <div class="author">
-          <img src="./assets/images/man_one.jpg" alt="Charlotte Moore" />
-          <div>
-            <strong>Charlotte Moore</strong><br>
-            <span>Head of Commercials, Slack</span>
-          </div>
+      <div class="info-item">
+        <img src="assets/images/images.svg" alt="Images Icon" />
+        <div>
+          <h4>Images included</h4>
+          <p>We made custom licenses for all our premium images in the front.</p>
         </div>
       </div>
-    
-      <form class="form-card">
-        <h4>Fill out the form and we'll be in touch as soon as possible</h4>
-    
-        <div class="form-row">
-          <input type="text" placeholder="First name">
-          <input type="text" placeholder="Last name">
+      <div class="info-item">
+        <img src="assets/images/cancel.svg" alt="Cancel Icon" />
+        <div>
+          <h4>Cancel anytime <span class="sketch">sketch</span></h4>
+          <p>If it's not for you, just cancel, no hidden costs or fees.</p>
         </div>
-    
-        <input type="email" placeholder="Email">
-    
-        <div class="form-row">
-          <select>
-            <option>Budget</option>
-          </select>
-          <select>
-            <option>Country</option>
-          </select>
+      </div>
+      <div class="info-item">
+        <img src="assets/images/moneyback.svg" alt="Money Back Icon" />
+        <div>
+          <h4>Money back</h4>
+          <p>100% guaranteed money back. No questions asked.</p>
         </div>
-    
-        <textarea placeholder="Tell us more about your project, needs, and timeline, please..."></textarea>
-    
-        <label class="checkbox-wrap">
-          <input type="checkbox">
-          <span>Yes, I'd like to receive occasional marketing emails from Front. I have the right to opt out at any time.</span>
-        </label>
-    
-        <div class="privacy-links">
-          <a href="#">View privacy policy</a>
-          <a href="#">View privacy policy</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section class="contact-section">
+    <div class="left-side">
+      <h2>Hire Us</h2>
+      <p class="subtitle">Whatever your goal - we will get you there</p>
+      <hr>
+      <blockquote>
+        “ I love front! I love the ease of use, I love the fact that I have total creative freedom...”
+      </blockquote>
+      <div class="author">
+        <img src="assets/images/man_one.jpg" alt="Charlotte Moore" />
+        <div>
+          <strong>Charlotte Moore</strong><br>
+          <span>Head of Commercials, Slack</span>
         </div>
-    
-        <button type="submit">Submit Form</button>
-      </form>
-    </section>
-    <footer>
-        <div class="footer-container">
-          <div class="contact-info">
-            <img class="footer-front" src="./assets/logos/logo-front.svg" alt="front">
-            <p class="location"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M516-120 402-402 120-516v-56l720-268-268 720h-56Z"/></svg>153 Williamson Plaza, Maggieberg</p>
-            <p class="number"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12Z"/></svg>+1 (062) 109-9222</p>
-          </div>
-          <div class="footer-info-container">
-            <div class="company">
-              <h5>Company</h5>
-              <ul>
-                <li>About</li>
-                <li>Career</li>
-                <li>Blog</li>
-                <li>Customers</li>
-                <li>Hire us</li>
-              </ul>
-            </div>
+      </div>
+    </div>
+    <form class="form-card">
+      <h4>Fill out the form and we'll be in touch as soon as possible</h4>
+      <div class="form-row">
+        <input type="text" placeholder="First name">
+        <input type="text" placeholder="Last name">
+      </div>
+      <input type="email" placeholder="Email">
+      <div class="form-row">
+        <select><option>Budget</option></select>
+        <select><option>Country</option></select>
+      </div>
+      <textarea placeholder="Tell us more about your project, needs, and timeline, please..."></textarea>
+      <label class="checkbox-wrap">
+        <input type="checkbox">
+        <span>Yes, I'd like to receive occasional marketing emails from Front. I have the right to opt out at any time.</span>
+      </label>
+      <div class="privacy-links">
+        <a href="#">View privacy policy</a>
+        <a href="#">View privacy policy</a>
+      </div>
+      <button type="submit">Submit Form</button>
+    </form>
+  </section>
 
-            <div class="features">
-              <h5>Features</h5>
-              <ul>
-                <li>Press</li>
-                <li>Release notes</li>
-                <li>Intergrations</li>
-                <li>Pricing</li>
-              </ul>
-            </div>
-
-            <div class="documentation">
-              <h5>Documentation</h5>
-              <ul>
-                <li>Support</li>
-                <li>Docs</li>
-                <li>Status</li>
-                <li>API Reference</li>
-                <li>Tech Requirements</li>
-              </ul>
-            </div>
-
-            <div class="resources">
-              <h5>Resources</h5>
-              <ul>
-                <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M440-280h80v-240h-80v240Zm40-320q17 0 28.5-11.5T520-640q0-17-11.5-28.5T480-680q-17 0-28.5 11.5T440-640q0 17 11.5 28.5T480-600Zm0 520q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg>Help</li>
-                <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm246-164q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg>Your Account</li>
-              </ul>
-            </div>
-          </div>
-
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="contact-info">
+        <img class="footer-front" src="assets/logos/logo-front.svg" alt="front">
+        <p class="location"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M516-120 402-402 120-516v-56l720-268-268 720h-56Z"/></svg>153 Williamson Plaza, Maggieberg</p>
+        <p class="number"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12Z"/></svg>+1 (062) 109-9222</p>
+      </div>
+      <div class="footer-info-container">
+        <div class="company">
+          <h5>Company</h5>
+          <ul>
+            <li>About</li>
+            <li>Career</li>
+            <li>Blog</li>
+            <li>Customers</li>
+            <li>Hire us</li>
+          </ul>
         </div>
-    </footer>
+        <div class="features">
+          <h5>Features</h5>
+          <ul>
+            <li>Press</li>
+            <li>Release notes</li>
+            <li>Intergrations</li>
+            <li>Pricing</li>
+          </ul>
+        </div>
+        <div class="documentation">
+          <h5>Documentation</h5>
+          <ul>
+            <li>Support</li>
+            <li>Docs</li>
+            <li>Status</li>
+            <li>API Reference</li>
+            <li>Tech Requirements</li>
+          </ul>
+        </div>
+        <div class="resources">
+          <h5>Resources</h5>
+          <ul>
+            <li> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M440-280h80v-240h-80v240Zm40-320q17 0 28.5-11.5T520-640q0-17-11.5-28.5T480-680q-17 0-28.5 11.5T440-640q0 17 11.5 28.5T480-600Zm0 520q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg>Help</li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm246-164q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg>Your Account</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="main.js"></script>
 </body>
 </html>
